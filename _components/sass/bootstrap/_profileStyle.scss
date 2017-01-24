@@ -1,0 +1,401 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+
+/**  Basic Page CSS **/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  position: relative;
+  background-color: #f5f8f9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/**  Page **/
+
+a,
+.btn {
+  transition: all .5s ease-out;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #3f454a;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+}
+
+
+/* form */
+
+.form-horizontal {
+  margin: 0 25px;
+  .form-pos {
+    position: relative;
+  }
+  .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    /*position: relative;*/
+    margin-bottom: 45px;
+  }
+  label {
+    color: #3f454a;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: all 0.2s ease;
+  }
+}
+
+
+/* input focus */
+
+input:focus ~ label,
+input.filled ~ label {
+  top: -20px;
+  transform: scale(.75);
+  left: -6px;
+  text-transform: uppercase;
+  color: #d0dce7;
+}
+
+input:focus ~ label,
+input.filled ~ label {
+  left: -20px;
+}
+
+input[name="newPass"]:focus ~ label,
+input.filled[name="newPass"] ~ label {
+  left: -16px;
+}
+
+
+/* btn-default */
+
+.btn-default {
+  font-size: 12px;
+  font-weight: bold;
+  border-width: 2px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+/* btn-info */
+
+.btn-info {
+  font-weight: 400;
+}
+
+
+/* profile page */
+
+header {
+  padding-top: 75px;
+  margin-bottom: 25px;
+}
+
+main .profile-page {
+  padding-bottom: 35px;
+  box-shadow: 0px 1px 6px 0px rgba(114, 126, 136, 0.28);
+}
+
+.profile-page {
+  background-color: #fff;
+  .img-container {
+    position: relative;
+    height: 167px;
+    img {
+      box-shadow: 0px 1px 24px 0px rgba(189, 196, 201, 0.7);
+      position: absolute;
+      bottom: -25px;
+      z-index: 1;
+    }
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .btn-default {
+    margin-top: 25px;
+    margin-right: 10px;
+  }
+  .info {
+    position: relative;
+    padding-left: 25px;
+    .ion-ios-location-outline,
+    .ion-ios-telephone-outline,
+    .ion-earth {
+      position: absolute;
+      top: -5px;
+      left: 0;
+      color: #a8b8c4;
+      padding-right: 10px
+    }
+    .ion-ios-location-outline,
+    .ion-ios-telephone-outline,
+    {
+      font-size: 22px;
+    }
+    .ion-earth {
+      font-size: 18px;
+      top: -1px;
+    }
+  }
+  .ion-star,
+  .ion-android-star-outline {
+    color: #727e88;
+    font-size: 24px;
+  }
+  .ion-android-camera {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    color: #d0dce7;
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  .btn-info {
+    position: relative;
+    padding-left: 55px;
+    padding-right: 20px;
+  }
+  .reviews {
+    .stars {
+      margin-right: 100px;
+    }
+    .stars,
+    p {
+      display: inline-block;
+      color: #727e88;
+    }
+    p {
+      position: absolute;
+      top: 8px;
+      right: 0;
+    }
+    span {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .reviews-elements {
+      position: relative;
+    }
+  }
+  .tab-container {
+    box-shadow: 0px 0px 6px 0px rgba(189, 196, 201, 0.87);
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background-color: transparent;
+    border-bottom: 2px solid #028dfe;
+  }
+  .nav > li > a {
+    padding-left: 0px;
+    padding-right: 0px;
+    color: #3f454a;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  .nav-tabs {
+    padding-left: 262px;
+  }
+}
+
+
+/* profile content */
+
+.profile-content {
+  h2 {
+    color: #727e88;
+    letter-spacing: 1.5px;
+    margin: 40px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+  }
+  .profile-info {
+    margin: 0 40px;
+  }
+  .profile-element {
+    padding: 10px 0px 10px 5px;
+    background-color: #f5f8f8;
+    margin-bottom: 3px;
+    float: left;
+    clear: both;
+    a {
+      outline: none;
+      display: inline-table;
+    }
+    .ion-edit {
+      color: #727e88;
+      margin-left: 35px;
+      background-color: #ecf1f5;
+      transition: all .5s ease-out;
+      &:hover {
+        background-color: #007ee5;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+    .ion-edit {
+      padding: 10px 15px 14px 15px;
+    }
+    h3 .ion-edit {
+      padding: 7px 10px;
+    }
+  }
+  .profile-element:not(:first-child) {
+    padding-bottom: 5px;
+  }
+  .form-horizontal {
+    margin-left: 40px;
+    max-width: 270px;
+    .btn-primary {
+      padding: 7px 30px;
+      font-size: 12px;
+    }
+  }
+}
+
+
+/* popover */
+
+.popover {
+  width: 300px;
+  .popover-content {
+    padding: 30px 0px 15px 0;
+    .form-horizontal {
+      margin: 0 25px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+    }
+    .btn-default {
+      margin-top: 0px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+}
+
+@media screen and (max-width:767px) {
+  p {
+    font-size: 12px;
+  }
+  .profile-page .ion-star,
+  .profile-page .ion-android-star-outline {
+    color: #007ee5;
+  }
+  header .profile-page .btn-default {
+    border: 0;
+  }
+  .profile-page .nav-tabs {
+    padding-left: 0;
+  }
+  .img-container {
+    text-align: center;
+  }
+  .profile-page .img-container img {
+    position: relative;
+    bottom: 0;
+  }
+  .profile-page h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .reviews.pull-right {
+    float: none !important;
+  }
+  .profile-page .reviews p {
+    position: relative;
+    display: block;
+    top: 0;
+    color: #3f454a;
+  }
+  .profile-page .reviews span {
+    padding-left: 0;
+  }
+  header .profile-page {
+    background-color: #f5f8f9;
+  }
+  header .tab-container {
+    background-color: #ffffff;
+  }
+  .profile-content .profile-element {
+    background-color: #fff;
+  }
+  main .profile-page h2 {
+    text-align: left;
+  }
+  main .profile-page h2.profile-mobile {
+    float: left; 
+  }
+  .tab-pane .ion-edit.visible-xs{
+    float: right;
+    margin-top: 20px;
+    color: #727e88;
+    background-color: #ecf1f5;
+    padding: 7px 10px;
+    font-size: 16px;
+  }
+}
+
+
+/* menu */
+
+@media screen and (max-width:767px) {
+  div.first {
+    position: relative;
+    overflow: hidden;
+    max-width: 767px;
+    margin: 0px auto;
+  }
+  div.scrollmenu,
+  ul.nav-tabs {
+    overflow: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+  }
+  div.scrollmenu::-webkit-scrollbar,
+  ul.nav-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  div.scrollmenu a,
+  ul.nav-tabs li,
+  ul.nav-tabs li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+  .nav-tabs > li {
+    float: none;
+  }
+  div.scrollmenu a:hover {
+    background-color: #777;
+  }
+}

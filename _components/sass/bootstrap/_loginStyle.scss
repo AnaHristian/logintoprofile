@@ -1,0 +1,170 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+
+/**  Basic Page CSS **/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+
+/**  Page **/
+
+a,
+.btn {
+  transition: all .5s ease-out;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #3f454a;
+  font-size: 24px;
+}
+
+p {
+  font-size: 14px;
+}
+
+
+/* form */
+
+.form-horizontal {
+  margin: 0 25px;
+  .form-pos {
+    position: relative;
+  }
+  .form-group {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 45px;
+  }
+  label {
+    color: #3f454a;
+    font-size: 16px;
+    font-weight: 400;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: all 0.2s ease;
+  }
+}
+
+
+/* input focus */
+
+input:focus ~ label,
+input.filled ~ label {
+  top: -20px;
+  transform: scale(.75);
+  left: -6px;
+  text-transform: uppercase;
+  color: #d0dce7;
+}
+
+input[type="password"]:focus ~ label, 
+input.filled[type="password"] ~ label {
+  left: -10px;
+}
+
+
+/** Login **/
+
+.login-page {
+  background-image: url(../images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  h2 {
+    text-align: center;
+  }
+  .login-container {
+    border-radius: 5px;
+    padding: 50px 25px 25px 25px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 4px 16px 0px rgba(58, 75, 93, 0.27);
+    p {
+      color: #a6b0b7;
+      padding: 0 25px;
+    }
+    hr {
+      display: block;
+      border: 0;
+      border-top: 1px solid #d0dce7;
+      margin: 1em 25px 40px 25px;
+      padding: 0;
+      min-width: 400px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+
+/** Mobile **/
+
+@media screen and (max-width:767px) {
+  .login-page {
+    background-image: none;
+    background-color: #fff;
+  }
+  .login-page section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .login-page .login-container {
+    box-shadow: none;
+    padding: 50px 25px 25px 0;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 0;
+    transform: translate(0, 0);
+  }
+  .login-page .login-container h2 {
+    margin-bottom: 60px;
+  }
+  .login-page .login-container p {
+    padding: 25px 0;
+    text-align: left;
+  }
+  .login-page .btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .mobile-view {
+    padding: 50px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}

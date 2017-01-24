@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Page</title>
+  <!--<link rel="stylesheet" href="_components/css/bootstrap.css">-->
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/ionicons.css">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/utilities.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+  <header>
+    <div class="container profile-page">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="login.html" class="btn btn-default pull-right" role="button">LOG OUT</a>
+        </div>
+        <div class="col-sm-3 col-xs-12 img-container">
+          <img src="images/profile_image.jpg" alt="Jessica Parker, profile photo" width="200" height="167" class="img-responsive">
+        </div>
+
+        <div class="col-sm-9 col-xs-12">
+          <div class="col-sm-12 hidden-xs text-center">
+            <button type="button" class="btn btn-info"><i class="ion-android-camera"></i> Upload Cover Image</button>
+          </div>
+          <div class="col-sm-4 col-xs-12">
+            <h2>Jessica Parker</h2>
+            <div class="info">
+              <p><i class="ion-ios-location-outline"></i> Newport Beach, CA</p>
+            </div>
+            <div class="info">
+              <p><i class="ion-ios-telephone-outline"></i>(949) 325 - 68594</p>
+            </div>
+          </div>
+          <div class="col-sm-8 col-xs-12">
+            <div class="reviews pull-right">
+              <div class="reviews-elements">
+                <div class="stars">
+                  <i class="ion-star"></i>
+                  <i class="ion-star"></i>
+                  <i class="ion-star"></i>
+                  <i class="ion-star"></i>
+                  <i class="ion-android-star-outline"></i>
+                </div>
+                <p><span>6</span> Reviews</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-12 tab-container">
+
+          <div class="first">
+            <div class="scrollmenu">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">ABOUT</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">SETTINGS</a></li>
+                <li role="presentation"><a href="#option1" aria-controls="option1" role="tab" data-toggle="tab">OPTION1</a></li>
+                <li role="presentation"><a href="#option2" aria-controls="option2" role="tab" data-toggle="tab">OPTION2</a></li>
+                <li role="presentation"><a href="#option3" aria-controls="option3" role="tab" data-toggle="tab">OPTION3</a></li>
+              </ul>
+              <!--nav-tabs-->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="fullheight">
+    <div class="container profile-page">
+      <div class="row">
+        <div class="col-xs-12">
+
+          <div class="tab-content profile-content">
+            <section role="tabpanel" class="tab-pane active" id="about">
+              <h2 class="profile-mobile">Profile Info</h2>
+              <i class="ion-edit visible-xs edit-info"></i>
+              <article class="profile-info">
+                <div class="profile-element">
+                  <h3><span>Jessica Parker </span>
+                    <a tabindex="0" role="button" data-toggle="popover" 
+                      data-html="true"
+                      class="hidden-xs"
+                      data-content='
+                      <form class="form-horizontal text-left">
+                        <div class="mobile-view">
+                          <div class="form-group form-pos">
+                            <input name="name" type="text" class="form-control" id="newName">
+                            <label for="name">NAME</label>
+                          </div>
+                        <div class="form-group">
+                          <a id="save" class="btn btn-primary" href="#">
+                              SAVE
+                            </a>
+                            <a id="cancel" value="CANCEL" class="btn btn-default" href="#">
+                              CANCEL
+                            </a>
+                        </div>
+                      </form>
+                    '>
+                    <i class="ion-edit"></i>
+                    </a>
+                  </h3>
+                </div>
+                <div class="profile-element">
+                  <div class="info">
+                    <p><i class="ion-earth"></i><span>www.seller.com</span>
+                      <a tabindex="0" role="button" data-toggle="popover" 
+                        class="hidden-xs"
+                        data-html="true"
+                        data-content='
+                        <form class="form-horizontal text-left">
+                          <div class="mobile-view">
+                            <div class="form-group form-pos">
+                              <input name="website" type="text" class="form-control" id="website">
+                              <label for="website">WEBSITE</label>
+                            </div>
+                          <div class="form-group">
+                            <a id="save" class="btn btn-primary" href="#">
+                              SAVE
+                            </a>
+                            <a id="cancel" value="CANCEL" class="btn btn-default" href="#">
+                              CANCEL
+                            </a>
+                          </div>
+                        </form>
+                       '>
+                        <i class="ion-edit"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="profile-element">
+                  <div class="info">
+                    <p><i class="ion-ios-telephone-outline"></i><span>(949) 325 - 68594</span>
+                      <a tabindex="0" role="button" data-toggle="popover" 
+                        data-html="true"
+                        class="hidden-xs"
+                        data-content='
+                        <form class="form-horizontal text-left">
+                          <div class="mobile-view">
+                            <div class="form-group form-pos">
+                              <input name="phone" type="number" class="form-control" id="phone">
+                              <label for="phone">TELEPHONE NO</label>
+                            </div>
+                          <div class="form-group">
+                            <a id="save" class="btn btn-primary" href="#">
+                              SAVE
+                            </a>
+                            <a id="cancel" value="CANCEL" class="btn btn-default" href="#">
+                              CANCEL
+                            </a>
+                          </div>
+                        </form>
+                       '>
+                        <i class="ion-edit"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+                <div class="profile-element">
+                  <div class="info">
+                    <p><i class="ion-ios-location-outline"></i> <span>Newport Beach, CA</span>
+                      <a tabindex="0" role="button" data-toggle="popover" 
+                        class="hidden-xs"
+                        data-html="true" 
+                        data-content='
+                        <form class="form-horizontal text-left">
+                          <div class="mobile-view">
+                            <div class="form-group form-pos">
+                              <input name="address" type="text" class="form-control" id="address">
+                              <label for="address">CITY, STATE &amp; ZIP</label>
+                            </div>
+                          <div class="form-group">
+                            <a id="save" class="btn btn-primary" href="#">
+                              SAVE
+                            </a>
+                            <a id="cancel" value="CANCEL" class="btn btn-default" href="#">
+                            CANCEL
+                            </a>
+                          </div>
+                        </form>
+                       '>
+                        <i class="ion-edit"></i>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+
+            <section role="tabpanel" class="tab-pane" id="settings">
+              <h2>Change Password</h2>
+              <form class="form-horizontal text-left" id="frmChangePass" name="frmChangePass" method="post" action="#">
+                <div class="form-group form-pos">
+                  <input name="password" type="password" class="form-control" id="password" required>
+                  <label for="password">Existing Password</label>
+                </div>
+                <div class="form-group form-pos">
+                  <input name="newPass" type="password" class="form-control" id="newPass" required>
+                  <label for="newPass">New Password</label>
+                </div>
+                <div class="form-group form-pos">
+                  <input name="confirmPass" type="password" class="form-control" id="confirmPass" required>
+                  <label for="confirmPass">Confirm Password</label>
+                </div>
+                <div class="form-group">
+                  <input type="submit" name="changePass" id="changePass" value="SAVE" class="btn btn-primary">
+                </div>
+              </form>
+            </section>
+            <div role="tabpanel" class="tab-pane" id="option1">
+              <h2>OPTION1</h2>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="option2">
+              <h2>OPTION2</h2>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="option3">
+              <h2>OPTION3</h2>
+            </div>
+          </div>
+          <!--tab-content-->
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!-- main -->
+
+  <script src="js/script.js"></script>
+  <!--<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>-->
+</body>
+
+</html>
